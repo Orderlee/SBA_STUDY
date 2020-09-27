@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/Users/YoungWoo/PycharmProjects/ClassProject/0908/sqlitedb.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="489"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,7:mainmembers"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="members" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="38"/><column index="2" value="51"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="students" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="35"/><column index="2" value="37"/><column index="3" value="72"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sungjuk" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="26"/><column index="2" value="131"/><column index="3" value="153"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">--select * from students join sungjuk on students.id = sungjuk.id;
+--select * from students st join sungjuk sg on st.id = sg.id;
+--select st.id,st.name,st.birth,sg.subject,sg.jumsu 
+--from students st join sungjuk sg on st.id = sg.id;
+-- 이름이 lee인 친구의 성적을 구해보자
+--select id from students where name ='이문세';
+
+--select * from sungjuk where id ='lee'
+
+--select * from sungjuk
+--where id = (select id from students where name ='이문세');
+
+--select jumsu from sungjuk
+--where id = (select id from students where name ='고아라');
+
+create table members (id text, name text);</sql><current_tab id="0"/></tab_sql></sqlb_project>
